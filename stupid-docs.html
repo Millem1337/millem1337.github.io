@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stupid docs</title>
+</head>
+<style>
+    .code{
+        background-color: rgb(56, 56, 56);
+        color: white;
+        border-radius: 12px;
+        padding: 0px 8px;
+    }
+
+    a{
+        color: white;
+        transition: .3s;
+        padding: 7px;
+        border-radius: 12px;
+        text-decoration:double;
+    }
+
+    a:hover{
+        background-color: rgb(56, 56, 56);
+    }
+</style>
+<body style="padding: 0 20%;font-family: monospace; font-size: 18px; background-color: #111111; color: white">
+    <nav>
+        <a href="https://github.com/Millem1337/stupid-lang">stupid-lang</a>
+        <a href="#console" style="float: right;">Console</a>
+        <a href="#vars" style="margin-right: 12px;float: right;">Variables</a>
+        <a href="#conditions" style="margin-right: 12px;float: right;">Conditions</a>
+        <a href="#h2i" style="margin-right: 12px; float: right;">How to install</a>
+    </nav>
+    <div style="padding: 0 12%;">
+        <h1 id="h2i">How to install:</h1>
+        <div><p style="text-align: centre;">For the coolest (no) programming language, you need to install the <a href="https://nim-lang.org">Nim</a> programming language on your PC.
+            Next, you must download the <a href="https://github.com/Millem1337/stupid-lang">main.nim</a> file and open the console. Next, you must create the test.stupid file. After that, you must enter this command into the console: <span class="code">nim c .\main.nim</span>
+            <br>
+            <br>
+            After that you can open the compiled file.</p>
+        </div>
+        <h1 id="console">Console:</h1>
+        <div>
+            <p>clog() - Outputs a string, value, or variable.</p>
+            <p><span class="code">clog("Hello, world!");</span></p>
+            <p>cin() - Allows the user to enter a string or value into a variable or empty.</p>
+            <p><span class="code">var namevar; cin(namevar);</span></p>
+        </div>
+        <h1 id="vars">Variables:</h1>
+        <div>
+            <p>To create a variable you need to write:</p>
+            <p><span class="code">var namevar;</span></p>
+            <p>But if you want to immediately initialize your variable, write:</p>
+            <p><span class="code">var namevar = "Mike";</span></p>
+            <p>To remove a variable you need to write:</p>
+            <p><span class="code">remVar(namevar);</span></p>
+        </div>
+        <h1 id="conditions">Conditions:</h1>
+        <div>
+            <p>Conditions example:</p>
+            <div class="code">
+                var name;
+                <br>
+                cin(name);
+                <br>
+                if(name == "Mike");
+                <br>   
+                    clog("Hello developer!");
+                <br>
+                end;
+                <br>
+                if(name != "Mike");
+                <br>
+                    clog("Hello user!");
+                <br>
+                end;
+                <br>
+                remVar(name);
+            </div>
+        </div>
+    </div>
+</body>
+</html>
